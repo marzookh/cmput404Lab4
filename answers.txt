@@ -1,0 +1,23 @@
+1) https://github.com/marzookh/cmput404Lab4
+
+2) it shows 'The install worked successfully! Congratulations!'
+
+3) it shows Page not Not Found for '/' and 'Hello, world. You're at the polls index.' for '/polls'
+
+4) Django uses migrations to reflect the changes made to the models into the database schema
+
+5) We see the choices and questions tables.
+    We can get custom models to appear in the admin page by first creating the model in django and then
+    adding it to the admin page. Then we have to make migrations and migrate the project. Finally we can 
+    run the server and should be able to see the custom model in the admin page.
+
+6) We see the message 'You're looking at question 38.' when we go to /polls/38/  
+We see the message You're voting on question 38. when we go to /polls/38/vote
+We see the message 'You're looking at the results of question 38.' when we go to /polls/38/results
+We get a 404 page not found error
+We can change the 'int:' to 'str:'
+
+7) hard-coding urls makes changing urls harder and increases the chances of linking to a wrong page
+
+8) We can avoid resusing similar code in multiple views by using generic views. We should use it when there is repeating code patterns in view development.
+However, we should not use it when we are using some type of URL that generic views don't work for.
